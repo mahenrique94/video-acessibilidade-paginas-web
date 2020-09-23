@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TST</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> 
+ <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="tabs">
+    <ul
+      class="tabs__group"
+      role="tablist"
+      aria-label="Lista de abas"
+    >
+      <li
+        class="tabs__tab js-tab is-active"
+        data-content="1"
+        role="tab"
+        aria-controls="tab-content-1"
+        aria-selected="true"
+        id="tab-1"
+        tabindex="0"
+      >
+        Tab 1
+      </li>
+      <li
+        class="tabs__tab js-tab"
+        data-content="2"
+        role="tab"
+        aria-controls="tab-content-2"
+        aria-selected="false"
+        id="tab-2"
+        tabindex="-1"
+      >
+        Tab 2
+      </li>
+      <li
+        class="tabs__tab js-tab"
+        data-content="3"
+        role="tab"
+        aria-controls="tab-content-3"
+        aria-selected="false"
+        id="tab-3"
+        tabindex="-1"
+      >
+        Tab 3
+      </li>
+    </ul>
+    <div class="tabs__panel">
+      <div
+        class="tabs__content js-tab-content is-visible"
+        id="tab-content-1"
+        role="tabpanel"
+        aria-labelledby="tab-1"
+      >
+        Conteudo 1
+      </div>
+      <div
+        class="tabs__content js-tab-content"
+        id="tab-content-2"
+        role="tabpanel"
+        aria-labelledby="tab-2"
+      >
+        Conteudo 2
+      </div>
+      <div
+        class="tabs__content js-tab-content"
+        id="tab-content-3"
+        role="tabpanel"
+        aria-labelledby="tab-3"
+      >
+        Conteudo 3
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

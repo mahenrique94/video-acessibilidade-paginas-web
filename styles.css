@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+  padding: 3rem;
+  font-size: 3rem;
+}
+
+.tabs__group {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__tab {
+  list-style: none;
+  background-color:darkgray;
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding: .5rem 1rem;
+}
+
+.tabs__tab.is-active {
+  background-color: black;
+}
+
+.tabs__tab:focus {
+  background-color: red;
+}
+
+.tabs__tab:hover {
+  background-color: gray;
+}
+
+.tabs__tab:focus {
+  outline: none;
+}
+
+.tabs__tab:hover {
+  cursor: pointer;
+}
+
+.tabs__content {
+  display: none;
+  padding: 1rem;
+}
+
+.tabs__content.is-visible {
+  display: block;
+}
